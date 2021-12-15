@@ -25,7 +25,7 @@ but it will also allow you to learn a highly interesting new concept in C progra
 	on manipulating files for data management and persistence.
 	This project consists of coding a function that returns one line at a time from a text file.
 
-For more detailed information, look at the [**subject of this project**](https://github.com/Surfi89/42cursus/tree/main/Subject%20PDFs).The aim of this project is to make you code a function that **returns a line
+The aim of this project is to make you code a function that **returns a line
 ending with a newline, read from a file descriptor.**
 
 
