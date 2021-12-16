@@ -81,17 +81,3 @@ char	*get_next_line(int fd)
 	str[fd] = second_part(str[fd]);
 	return (line);
 }
-
-// int main(){
-
-// int fd1 = open("best", O_RDONLY);
-// int fd2 = open("test", O_RDONLY);
-// int fd3 = open("lest", O_RDONLY);
-
-// printf("%s",get_next_line(fd1));
-// printf("%s",get_next_line(fd2));
-// printf("%s",get_next_line(fd3));
-// printf("%s",get_next_line(fd1));
-// printf("%s",get_next_line(fd2));
-// printf("%s",get_next_line(fd3));
-// }

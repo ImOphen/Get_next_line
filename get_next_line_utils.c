@@ -24,6 +24,24 @@ size_t	ft_strlen(const char *s)
 	return (i);
 }
 
+char	*ft_strjoin(char const *s1, char const *s2)
+{
+	char		*s;
+	size_t		s1len;
+	size_t		s2len;
+
+	s1len = ft_strlen((char *)s1);
+	s2len = ft_strlen((char *)s2);
+	s = malloc((s1len + s2len + 1) * sizeof(char));
+	if (s == NULL)
+		return (NULL);
+	ft_memmove(s, s1, s1len);
+	ft_memmove(&s[s1len], s2, s2len);
+	s[s1len + s2len] = '\0';
+	free((void *)s1);
+	return (s);
+}
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	size_t	i;
